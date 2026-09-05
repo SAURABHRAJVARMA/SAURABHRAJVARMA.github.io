@@ -2,51 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Saurabh Raj Varma — AI/ML Engineer, Data Scientist and AI Builder">
-
-    <meta name="keywords"
-          content="Saurabh Raj Varma, AI Engineer, Machine Learning, Data Scientist, Python, Kaggle, GitHub">
-
-    <meta name="author"
-          content="Saurabh Raj Varma">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Raj Varma — AI/ML Engineer, Data Scientist and AI Builder">
+    <meta name="keywords" content="Saurabh Raj Varma, AI Engineer, Machine Learning, Data Scientist, Python, Kaggle, GitHub">
+    <meta name="author" content="Saurabh Raj Varma">
     <title>Saurabh Raj Varma | AI/ML Engineer</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-
         /* =========================================================
-           GLOBAL
+           GLOBAL STYLES
         ========================================================= */
-
         :root {
             --bg: #05070d;
             --bg2: #090d18;
-            --card: rgba(255,255,255,0.045);
-            --card-hover: rgba(255,255,255,0.075);
-
+            --card: rgba(255, 255, 255, 0.045);
+            --card-hover: rgba(255, 255, 255, 0.075);
             --text: #f5f7ff;
             --muted: #9ba4b7;
-
             --primary: #7c5cff;
             --secondary: #00d4ff;
             --success: #31e981;
-
-            --border: rgba(255,255,255,0.09);
-
+            --border: rgba(255, 255, 255, 0.09);
             --max-width: 1200px;
-
             --radius: 20px;
         }
 
@@ -63,14 +45,11 @@
         body {
             font-family: "Inter", sans-serif;
             background:
-                radial-gradient(circle at 10% 10%, rgba(124,92,255,0.12), transparent 30%),
-                radial-gradient(circle at 90% 20%, rgba(0,212,255,0.08), transparent 25%),
+                radial-gradient(circle at 10% 10%, rgba(124, 92, 255, 0.12), transparent 30%),
+                radial-gradient(circle at 90% 20%, rgba(0, 212, 255, 0.08), transparent 25%),
                 var(--bg);
-
             color: var(--text);
-
             line-height: 1.6;
-
             overflow-x: hidden;
         }
 
@@ -78,17 +57,13 @@
             content: "";
             position: fixed;
             inset: 0;
-
             pointer-events: none;
-
             background-image:
-                linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-
+                linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
             background-size: 60px 60px;
-
             mask-image: linear-gradient(to bottom, black, transparent 85%);
-
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent 85%);
             z-index: -2;
         }
 
@@ -141,26 +116,20 @@
         /* =========================================================
            NAVBAR
         ========================================================= */
-
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-
             z-index: 1000;
-
-            background: rgba(5,7,13,0.65);
-
+            background: rgba(5, 7, 13, 0.65);
             backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
-
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .nav-inner {
             height: 76px;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -181,7 +150,6 @@
             display: flex;
             align-items: center;
             gap: 30px;
-
             list-style: none;
         }
 
@@ -189,7 +157,6 @@
             color: #b9c1d2;
             font-size: 14px;
             font-weight: 500;
-
             transition: 0.25s;
         }
 
@@ -205,20 +172,18 @@
         .nav-social a {
             width: 38px;
             height: 38px;
-
             display: grid;
             place-items: center;
-
             border: 1px solid var(--border);
             border-radius: 10px;
-
             color: #cbd2df;
-
             transition: 0.3s;
+            font-size: 12px;
+            font-weight: 700;
         }
 
         .nav-social a:hover {
-            border-color: rgba(0,212,255,0.5);
+            border-color: rgba(0, 212, 255, 0.5);
             color: var(--secondary);
             transform: translateY(-2px);
         }
@@ -235,13 +200,10 @@
         /* =========================================================
            HERO
         ========================================================= */
-
         #home {
             min-height: 100vh;
-
             display: flex;
             align-items: center;
-
             padding-top: 130px;
         }
 
@@ -256,19 +218,13 @@
             display: inline-flex;
             align-items: center;
             gap: 9px;
-
             padding: 7px 13px;
-
-            border: 1px solid rgba(49,233,129,0.2);
+            border: 1px solid rgba(49, 233, 129, 0.2);
             border-radius: 50px;
-
-            background: rgba(49,233,129,0.05);
-
+            background: rgba(49, 233, 129, 0.05);
             color: #9bf4bd;
-
             font-size: 12px;
             font-weight: 600;
-
             margin-bottom: 24px;
         }
 
@@ -277,33 +233,21 @@
             height: 7px;
             background: var(--success);
             border-radius: 50%;
-
-            box-shadow: 0 0 15px rgba(49,233,129,0.8);
+            box-shadow: 0 0 15px rgba(49, 233, 129, 0.8);
         }
 
         .hero h1 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: clamp(52px, 7vw, 88px);
-
             line-height: 0.98;
-
             letter-spacing: -4px;
-
             margin-bottom: 25px;
         }
 
         .gradient-text {
-            background: linear-gradient(
-                100deg,
-                #ffffff 10%,
-                #a18aff 48%,
-                #54e8ff 100%
-            );
-
+            background: linear-gradient(100deg, #ffffff 10%, #a18aff 48%, #54e8ff 100%);
             -webkit-background-clip: text;
             background-clip: text;
-
             color: transparent;
         }
 
@@ -333,47 +277,35 @@
             align-items: center;
             justify-content: center;
             gap: 9px;
-
             padding: 13px 19px;
-
             border-radius: 11px;
-
             font-size: 14px;
             font-weight: 600;
-
             border: 1px solid var(--border);
-
             transition: 0.3s;
         }
 
         .btn-primary {
-            background: linear-gradient(
-                135deg,
-                var(--primary),
-                #5d9cff
-            );
-
+            background: linear-gradient(135deg, var(--primary), #5d9cff);
             border-color: transparent;
-
-            box-shadow: 0 12px 35px rgba(124,92,255,0.25);
+            box-shadow: 0 12px 35px rgba(124, 92, 255, 0.25);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 18px 45px rgba(124,92,255,0.4);
+            box-shadow: 0 18px 45px rgba(124, 92, 255, 0.4);
         }
 
         .btn-secondary {
-            background: rgba(255,255,255,0.04);
+            background: rgba(255, 255, 255, 0.04);
         }
 
         .btn-secondary:hover {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             transform: translateY(-3px);
         }
 
-        /* Hero visual */
-
+        /* Hero Visual */
         .hero-visual {
             display: flex;
             justify-content: center;
@@ -382,132 +314,77 @@
         .ai-orb {
             width: min(360px, 75vw);
             aspect-ratio: 1;
-
             position: relative;
-
             display: grid;
             place-items: center;
-
             border-radius: 50%;
-
             background:
-                radial-gradient(
-                    circle at 35% 30%,
-                    rgba(255,255,255,0.12),
-                    transparent 20%
-                ),
-                radial-gradient(
-                    circle,
-                    rgba(124,92,255,0.23),
-                    rgba(0,212,255,0.05) 45%,
-                    transparent 68%
-                );
-
-            border: 1px solid rgba(255,255,255,0.12);
-
+                radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.12), transparent 20%),
+                radial-gradient(circle, rgba(124, 92, 255, 0.23), rgba(0, 212, 255, 0.05) 45%, transparent 68%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             box-shadow:
-                0 0 100px rgba(124,92,255,0.18),
-                inset 0 0 60px rgba(0,212,255,0.04);
-
+                0 0 100px rgba(124, 92, 255, 0.18),
+                inset 0 0 60px rgba(0, 212, 255, 0.04);
             animation: floating 6s ease-in-out infinite;
         }
 
         .ai-orb::before {
             content: "";
-
             position: absolute;
             inset: 16%;
-
-            border: 1px solid rgba(124,92,255,0.45);
-
+            border: 1px solid rgba(124, 92, 255, 0.45);
             border-radius: 50%;
-
             animation: rotate 15s linear infinite;
         }
 
         .ai-orb::after {
             content: "";
-
             position: absolute;
             inset: 28%;
-
-            border: 1px dashed rgba(0,212,255,0.45);
-
+            border: 1px dashed rgba(0, 212, 255, 0.45);
             border-radius: 50%;
-
             animation: rotateReverse 10s linear infinite;
         }
 
         .orb-core {
             width: 34%;
             aspect-ratio: 1;
-
             border-radius: 50%;
-
-            background:
-                radial-gradient(
-                    circle at 35% 30%,
-                    white,
-                    #9b7fff 18%,
-                    #5d52e8 45%,
-                    #151733 75%
-                );
-
+            background: radial-gradient(circle at 35% 30%, white, #9b7fff 18%, #5d52e8 45%, #151733 75%);
             box-shadow:
-                0 0 40px rgba(124,92,255,0.8),
-                0 0 100px rgba(0,212,255,0.25);
-
+                0 0 40px rgba(124, 92, 255, 0.8),
+                0 0 100px rgba(0, 212, 255, 0.25);
             position: relative;
             z-index: 3;
         }
 
         .orb-dot {
             position: absolute;
-
             width: 7px;
             height: 7px;
-
             background: #fff;
-
             border-radius: 50%;
-
             box-shadow: 0 0 15px var(--secondary);
         }
 
-        .orb-dot.one {
-            top: 18%;
-            left: 24%;
-        }
-
-        .orb-dot.two {
-            right: 19%;
-            top: 34%;
-        }
-
-        .orb-dot.three {
-            bottom: 20%;
-            left: 29%;
-        }
+        .orb-dot.one { top: 18%; left: 24%; }
+        .orb-dot.two { right: 19%; top: 34%; }
+        .orb-dot.three { bottom: 20%; left: 29%; }
 
         /* =========================================================
            STATS
         ========================================================= */
-
         .stats {
             margin-top: 80px;
-
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
         }
 
         .stat {
             padding: 28px 20px;
-
             text-align: center;
-
             border-right: 1px solid var(--border);
         }
 
@@ -517,18 +394,10 @@
 
         .stat-number {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 30px;
             font-weight: 700;
-
             margin-bottom: 5px;
-
-            background: linear-gradient(
-                90deg,
-                white,
-                #91ddff
-            );
-
+            background: linear-gradient(90deg, white, #91ddff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -542,42 +411,30 @@
         /* =========================================================
            ABOUT
         ========================================================= */
-
         .about-grid {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
             gap: 70px;
-
             align-items: start;
-
             margin-top: 55px;
         }
 
         .about-card {
             padding: 30px;
-
             border: 1px solid var(--border);
-
             border-radius: var(--radius);
-
             background: var(--card);
-
             position: relative;
             overflow: hidden;
         }
 
         .about-card::before {
             content: "";
-
             position: absolute;
-
             width: 150px;
             height: 150px;
-
-            background: rgba(124,92,255,0.13);
-
+            background: rgba(124, 92, 255, 0.13);
             filter: blur(60px);
-
             top: -60px;
             right: -40px;
         }
@@ -585,25 +442,15 @@
         .about-avatar {
             width: 95px;
             height: 95px;
-
             border-radius: 22px;
-
             display: grid;
             place-items: center;
-
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 30px;
             font-weight: 700;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #7c5cff,
-                    #00d4ff
-                );
-
+            background: linear-gradient(135deg, #7c5cff, #00d4ff);
             margin-bottom: 22px;
+            color: white;
         }
 
         .about-card h3 {
@@ -619,11 +466,8 @@
 
         .about-content p {
             color: #b5bdcd;
-
             font-size: 16px;
-
             line-height: 1.9;
-
             margin-bottom: 20px;
         }
 
@@ -635,33 +479,25 @@
         /* =========================================================
            SKILLS
         ========================================================= */
-
         .skills-grid {
             margin-top: 50px;
-
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-
             gap: 18px;
         }
 
         .skill-card {
             padding: 24px;
-
             background: var(--card);
-
             border: 1px solid var(--border);
-
             border-radius: 17px;
-
             transition: 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
             background: var(--card-hover);
-
-            border-color: rgba(124,92,255,0.25);
+            border-color: rgba(124, 92, 255, 0.25);
         }
 
         .skill-icon {
@@ -682,152 +518,104 @@
 
         .tag {
             padding: 6px 9px;
-
             border-radius: 7px;
-
-            background: rgba(255,255,255,0.05);
-
-            border: 1px solid rgba(255,255,255,0.07);
-
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.07);
             color: #b9c2d2;
-
             font-size: 11px;
         }
 
         /* =========================================================
            PROJECTS
         ========================================================= */
-
         .projects-header {
             display: flex;
-
             justify-content: space-between;
-            align-items: end;
-
+            align-items: flex-end;
             gap: 30px;
         }
 
         .filters {
             margin-top: 38px;
-
             display: flex;
             flex-wrap: wrap;
-
             gap: 8px;
         }
 
         .filter {
             border: 1px solid var(--border);
-
-            background: rgba(255,255,255,0.035);
-
+            background: rgba(255, 255, 255, 0.035);
             color: #aeb7c8;
-
             padding: 8px 14px;
-
             border-radius: 50px;
-
             cursor: pointer;
-
             font-size: 12px;
-
             transition: 0.25s;
         }
 
         .filter:hover,
         .filter.active {
             color: white;
-
-            background: rgba(124,92,255,0.16);
-
-            border-color: rgba(124,92,255,0.4);
+            background: rgba(124, 92, 255, 0.16);
+            border-color: rgba(124, 92, 255, 0.4);
         }
 
         .projects-grid {
             margin-top: 28px;
-
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 18px;
         }
 
         .project {
             background: var(--card);
-
             border: 1px solid var(--border);
-
             border-radius: var(--radius);
-
             padding: 24px;
-
             display: flex;
             flex-direction: column;
-
             min-height: 365px;
-
             transition: 0.35s;
-
             position: relative;
-
             overflow: hidden;
         }
 
         .project::before {
             content: "";
-
             position: absolute;
-
             width: 180px;
             height: 180px;
-
             border-radius: 50%;
-
-            background: rgba(124,92,255,0.08);
-
+            background: rgba(124, 92, 255, 0.08);
             filter: blur(55px);
-
             top: -90px;
             right: -80px;
         }
 
         .project:hover {
             transform: translateY(-7px);
-
             background: var(--card-hover);
-
-            border-color: rgba(124,92,255,0.28);
-
-            box-shadow:
-                0 20px 60px rgba(0,0,0,0.25);
+            border-color: rgba(124, 92, 255, 0.28);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
         }
 
         .project-number {
             color: #707a90;
-
             font-size: 11px;
-
             letter-spacing: 2px;
-
             margin-bottom: 25px;
         }
 
         .project h3 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 22px;
-
             margin-bottom: 10px;
         }
 
         .project p {
             color: var(--muted);
-
             font-size: 13px;
-
             line-height: 1.7;
-
             margin-bottom: 18px;
         }
 
@@ -835,23 +623,16 @@
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-
             margin-top: auto;
-
             margin-bottom: 22px;
         }
 
         .project-tag {
             font-size: 10px;
-
             color: #bfc7d8;
-
             padding: 5px 8px;
-
-            background: rgba(0,212,255,0.055);
-
-            border: 1px solid rgba(0,212,255,0.1);
-
+            background: rgba(0, 212, 255, 0.055);
+            border: 1px solid rgba(0, 212, 255, 0.1);
             border-radius: 6px;
         }
 
@@ -862,150 +643,101 @@
 
         .project-link {
             flex: 1;
-
             text-align: center;
-
             padding: 9px;
-
             border: 1px solid var(--border);
-
             border-radius: 9px;
-
             font-size: 11px;
-
             color: #c6cedd;
-
             transition: 0.25s;
         }
 
         .project-link:hover {
             color: white;
-            border-color: rgba(0,212,255,0.35);
+            border-color: rgba(0, 212, 255, 0.35);
         }
 
         /* =========================================================
            KAGGLE
         ========================================================= */
-
         .kaggle-section {
-            background:
-                radial-gradient(
-                    circle at 80% 50%,
-                    rgba(0,212,255,0.06),
-                    transparent 35%
-                );
+            background: radial-gradient(circle at 80% 50%, rgba(0, 212, 255, 0.06), transparent 35%);
         }
 
         .kaggle-layout {
             margin-top: 50px;
-
             display: grid;
-
             grid-template-columns: 0.8fr 1.2fr;
-
             gap: 20px;
         }
 
         .kaggle-profile {
             padding: 35px;
-
             border-radius: var(--radius);
-
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(0,212,255,0.09),
-                    rgba(124,92,255,0.07)
-                );
-
+            background: linear-gradient(145deg, rgba(0, 212, 255, 0.09), rgba(124, 92, 255, 0.07));
             border: 1px solid var(--border);
         }
 
         .kaggle-logo {
             width: 60px;
             height: 60px;
-
             display: grid;
             place-items: center;
-
             border-radius: 16px;
-
             background: #20beff;
-
             color: #041018;
-
             font-weight: 900;
-
             font-size: 25px;
-
             margin-bottom: 22px;
         }
 
         .kaggle-profile h3 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 28px;
-
             margin-bottom: 8px;
         }
 
         .kaggle-profile p {
             color: var(--muted);
-
             font-size: 14px;
-
             margin-bottom: 22px;
         }
 
         .kaggle-list {
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
             gap: 12px;
         }
 
         .kaggle-item {
             padding: 20px;
-
             border: 1px solid var(--border);
-
             border-radius: 15px;
-
             background: var(--card);
-
             transition: 0.3s;
         }
 
         .kaggle-item:hover {
             transform: translateY(-4px);
-
-            border-color: rgba(0,212,255,0.3);
+            border-color: rgba(0, 212, 255, 0.3);
         }
 
         .kaggle-item small {
             color: var(--secondary);
-
             font-size: 10px;
-
             text-transform: uppercase;
-
             letter-spacing: 1px;
         }
 
         .kaggle-item h4 {
             margin-top: 6px;
-
             margin-bottom: 12px;
-
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 15px;
         }
 
         .kaggle-item a {
             font-size: 11px;
-
             color: #aeb7c8;
         }
 
@@ -1016,243 +748,202 @@
         /* =========================================================
            ACHIEVEMENTS
         ========================================================= */
-
         .achievement-grid {
             margin-top: 50px;
-
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 18px;
         }
 
         .achievement {
             padding: 28px;
-
             border: 1px solid var(--border);
-
             background: var(--card);
-
             border-radius: var(--radius);
-
             position: relative;
-
             overflow: hidden;
         }
 
         .achievement::after {
             content: "";
-
             position: absolute;
-
             width: 90px;
             height: 90px;
-
             border-radius: 50%;
-
-            background: rgba(124,92,255,0.12);
-
+            background: rgba(124, 92, 255, 0.12);
             filter: blur(35px);
-
             right: -30px;
             top: -30px;
         }
 
         .achievement-icon {
             font-size: 30px;
-
             margin-bottom: 18px;
         }
 
         .achievement h3 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 19px;
-
             margin-bottom: 7px;
         }
 
         .achievement p {
             color: var(--muted);
-
             font-size: 13px;
         }
 
         /* =========================================================
            EDUCATION
         ========================================================= */
-
         .timeline {
             margin-top: 50px;
-
             max-width: 850px;
-
             position: relative;
         }
 
         .timeline::before {
             content: "";
-
             position: absolute;
-
             left: 9px;
-
             top: 5px;
             bottom: 5px;
-
             width: 1px;
-
-            background: linear-gradient(
-                var(--primary),
-                rgba(124,92,255,0)
-            );
+            background: linear-gradient(var(--primary), rgba(124, 92, 255, 0));
         }
 
         .timeline-item {
             position: relative;
-
             padding-left: 42px;
-
             margin-bottom: 45px;
         }
 
         .timeline-dot {
             position: absolute;
-
             left: 3px;
             top: 4px;
-
             width: 13px;
             height: 13px;
-
             border-radius: 50%;
-
             background: var(--primary);
-
-            box-shadow:
-                0 0 20px rgba(124,92,255,0.8);
+            box-shadow: 0 0 20px rgba(124, 92, 255, 0.8);
         }
 
         .timeline-date {
             color: var(--secondary);
-
             font-size: 12px;
-
             font-weight: 700;
-
             letter-spacing: 1px;
-
             margin-bottom: 7px;
         }
 
         .timeline-item h3 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: 22px;
-
             margin-bottom: 4px;
         }
 
         .timeline-item h4 {
             color: #a9b2c4;
-
             font-size: 14px;
-
             margin-bottom: 10px;
         }
 
         .timeline-item p {
             color: var(--muted);
-
             font-size: 13px;
         }
 
         /* =========================================================
            CONTACT
         ========================================================= */
-
         .contact-box {
             margin-top: 50px;
-
             padding: 60px 40px;
-
             text-align: center;
-
             border-radius: 28px;
-
             background:
-                radial-gradient(
-                    circle at 50% 0%,
-                    rgba(124,92,255,0.2),
-                    transparent 45%
-                ),
-                rgba(255,255,255,0.035);
-
+                radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.2), transparent 45%),
+                rgba(255, 255, 255, 0.035);
             border: 1px solid var(--border);
-
             overflow: hidden;
-
             position: relative;
         }
 
         .contact-box h2 {
             font-family: "Space Grotesk", sans-serif;
-
             font-size: clamp(35px, 5vw, 58px);
-
             line-height: 1;
-
             margin-bottom: 18px;
         }
 
         .contact-box p {
             color: var(--muted);
-
             max-width: 600px;
-
             margin: auto;
-
             margin-bottom: 28px;
+        }
+
+        .contact-info-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            padding: 16px 24px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.3s;
+        }
+
+        .contact-info-card:hover {
+            border-color: rgba(0, 212, 255, 0.4);
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .contact-info-card span {
+            font-size: 20px;
+        }
+
+        .contact-info-card a {
+            color: var(--text);
+            font-weight: 500;
+            font-size: 15px;
         }
 
         .contact-buttons {
             display: flex;
-
             justify-content: center;
-
             flex-wrap: wrap;
-
             gap: 10px;
         }
 
         /* =========================================================
            FOOTER
         ========================================================= */
-
         footer {
             border-top: 1px solid var(--border);
-
             padding: 30px 0;
-
             color: #727c91;
-
             font-size: 12px;
         }
 
         .footer-inner {
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
-
             gap: 20px;
         }
 
         .footer-links {
             display: flex;
-
             gap: 18px;
         }
 
@@ -1263,2064 +954,530 @@
         /* =========================================================
            ANIMATIONS
         ========================================================= */
-
         @keyframes floating {
-
-            0%,100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-14px);
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-14px); }
         }
 
         @keyframes rotate {
-
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         @keyframes rotateReverse {
-
-            from {
-                transform: rotate(360deg);
-            }
-
-            to {
-                transform: rotate(0deg);
-            }
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
         }
 
         .reveal {
             opacity: 0;
-
             transform: translateY(25px);
-
-            transition:
-                opacity 0.7s ease,
-                transform 0.7s ease;
+            transition: opacity 0.7s ease, transform 0.7s ease;
         }
 
         .reveal.visible {
             opacity: 1;
-
             transform: translateY(0);
         }
 
         /* =========================================================
            RESPONSIVE
         ========================================================= */
-
-        @media(max-width: 950px) {
-
-            .hero {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-visual {
-                order: -1;
-            }
-
-            .ai-orb {
-                width: 270px;
-            }
-
-            .about-grid,
-            .kaggle-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .achievement-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
+        @media (max-width: 950px) {
+            .hero { grid-template-columns: 1fr; }
+            .hero-visual { order: -1; }
+            .ai-orb { width: 270px; }
+            .about-grid, .kaggle-layout { grid-template-columns: 1fr; }
+            .projects-grid, .skills-grid, .achievement-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
-        @media(max-width: 700px) {
-
-            section {
-                padding: 80px 0;
-            }
-
-            .container {
-                width: min(
-                    var(--max-width),
-                    calc(100% - 28px)
-                );
-            }
-
-            .nav-links,
-            .nav-social {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
+        @media (max-width: 700px) {
+            section { padding: 80px 0; }
+            .container { width: min(var(--max-width), calc(100% - 28px)); }
+            .nav-links, .nav-social { display: none; }
+            .mobile-menu { display: block; }
             .nav-links.open {
                 position: absolute;
-
                 display: flex;
-
                 flex-direction: column;
-
                 align-items: flex-start;
-
                 gap: 20px;
-
                 top: 76px;
                 left: 0;
-
                 width: 100%;
-
                 padding: 25px;
-
-                background: rgba(5,7,13,0.96);
-
+                background: rgba(5, 7, 13, 0.96);
                 border-bottom: 1px solid var(--border);
             }
-
-            .hero {
-                gap: 40px;
-            }
-
-            .hero h1 {
-                font-size: clamp(45px, 14vw, 68px);
-
-                letter-spacing: -3px;
-            }
-
-            .hero-description {
-                font-size: 15px;
-            }
-
-            .stats {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .stat {
-                border-bottom: 1px solid var(--border);
-            }
-
-            .stat:nth-child(2) {
-                border-right: none;
-            }
-
-            .stat:nth-child(3),
-            .stat:nth-child(4) {
-                border-bottom: none;
-            }
-
-            .projects-grid,
-            .skills-grid,
-            .achievement-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .kaggle-list {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-header {
-                display: block;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .contact-box {
-                padding: 45px 20px;
-            }
+            .hero { gap: 40px; }
+            .hero h1 { font-size: clamp(45px, 14vw, 68px); letter-spacing: -3px; }
+            .hero-description { font-size: 15px; }
+            .stats { grid-template-columns: 1fr 1fr; }
+            .stat { border-bottom: 1px solid var(--border); }
+            .stat:nth-child(2) { border-right: none; }
+            .stat:nth-child(3), .stat:nth-child(4) { border-bottom: none; }
+            .projects-grid, .skills-grid, .achievement-grid, .kaggle-list { grid-template-columns: 1fr; }
+            .projects-header { display: block; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .contact-box { padding: 45px 20px; }
+            .contact-info-grid { flex-direction: column; }
         }
-
     </style>
 </head>
 
-
 <body>
 
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================= -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#home" class="logo">SAURABH<span>.</span></a>
 
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#kaggle">Kaggle</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<nav>
+            <div class="nav-social">
+                <a href="https://github.com/SAURABHRAJVARMA" target="_blank" aria-label="GitHub">GH</a>
+                <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" aria-label="Kaggle">KG</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">IN</a>
+            </div>
 
-    <div class="container nav-inner">
-
-        <a href="#home" class="logo">
-            SAURABH<span>.</span>
-        </a>
-
-        <ul class="nav-links" id="navLinks">
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#kaggle">Kaggle</a>
-            </li>
-
-            <li>
-                <a href="#achievements">Achievements</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-        </ul>
-
-
-        <div class="nav-social">
-
-            <a
-                href="https://github.com/SAURABHRAJVARMA"
-                target="_blank"
-                aria-label="GitHub"
-            >
-                GH
-            </a>
-
-            <a
-                href="https://www.kaggle.com/saurabhrajvarma"
-                target="_blank"
-                aria-label="Kaggle"
-            >
-                K
-            </a>
-
+            <button class="mobile-menu" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
         </div>
+    </nav>
 
+    <!-- =========================================================
+         HERO SECTION
+    ========================================================= -->
+    <section id="home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        Available for AI/ML Opportunities
+                    </div>
 
-        <button
-            class="mobile-menu"
-            id="mobileMenu"
-            aria-label="Open menu"
-        >
-            ☰
-        </button>
+                    <h1>
+                        Building <span class="gradient-text">Intelligent</span> Systems
+                    </h1>
 
-    </div>
+                    <div class="hero-subtitle">
+                        Saurabh Raj Varma — AI/ML Engineer & Data Scientist
+                    </div>
 
-</nav>
+                    <p class="hero-description">
+                        Specializing in deep learning, natural language processing, computer vision, and scalable machine learning workflows. Turning complex datasets into actionable intelligence.
+                    </p>
 
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section id="home">
-
-    <div class="container">
-
-        <div class="hero">
-
-
-            <div class="hero-content reveal">
-
-                <div class="availability">
-
-                    <span class="availability-dot"></span>
-
-                    AI / ML · Data Science · AI Engineering
-
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
                 </div>
 
-
-                <h1>
-
-                    Saurabh
-                    <br>
-
-                    <span class="gradient-text">
-                        Raj Varma.
-                    </span>
-
-                </h1>
-
-
-                <div class="hero-subtitle">
-
-                    AI/ML Engineer · Data Scientist · AI Builder
-
+                <div class="hero-visual">
+                    <div class="ai-orb">
+                        <div class="orb-core"></div>
+                        <div class="orb-dot one"></div>
+                        <div class="orb-dot two"></div>
+                        <div class="orb-dot three"></div>
+                    </div>
                 </div>
-
-
-                <p class="hero-description">
-
-                    I build intelligent systems using machine learning,
-                    deep learning, computer vision, time-series forecasting,
-                    LLMs and data-driven engineering.
-
-                    From experimentation to working AI applications,
-                    I enjoy turning complex problems into practical solutions.
-
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="btn btn-primary"
-                    >
-                        Explore My Work
-                        →
-                    </a>
-
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA"
-                        target="_blank"
-                        class="btn btn-secondary"
-                    >
-                        GitHub
-                    </a>
-
-
-                    <a
-                        href="https://www.kaggle.com/saurabhrajvarma"
-                        target="_blank"
-                        class="btn btn-secondary"
-                    >
-                        Kaggle
-                    </a>
-
-                </div>
-
             </div>
 
-
-            <div class="hero-visual reveal">
-
-                <div class="ai-orb">
-
-                    <div class="orb-dot one"></div>
-                    <div class="orb-dot two"></div>
-                    <div class="orb-dot three"></div>
-
-                    <div class="orb-core"></div>
-
+            <!-- Stats Bar -->
+            <div class="stats reveal">
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">AI/ML Projects</div>
                 </div>
-
+                <div class="stat">
+                    <div class="stat-number">Top 5%</div>
+                    <div class="stat-label">Kaggle Competitions</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">ML Frameworks Mastered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99.2%</div>
+                    <div class="stat-label">Avg. Model Precision Focus</div>
+                </div>
             </div>
-
         </div>
+    </section>
 
+    <!-- =========================================================
+         ABOUT SECTION
+    ========================================================= -->
+    <section id="about" class="reveal">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Architecting the future with data & algorithms</h2>
 
-
-        <!-- STATS -->
-
-        <div class="stats reveal">
-
-
-            <div class="stat">
-
-                <div class="stat-number">
-                    8+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-avatar">SRV</div>
+                    <h3>Saurabh Raj Varma</h3>
+                    <p>IIT (ISM) Dhanbad</p>
                 </div>
 
-                <div class="stat-label">
-                    AI / ML Projects
+                <div class="about-content">
+                    <p>
+                        I am an <span class="highlight">AI/ML Engineer and Data Scientist</span> with a passion for designing end-to-end Machine Learning pipelines, Large Language Model (LLM) applications, and production-ready deep learning models.
+                    </p>
+                    <p>
+                        My expertise spans from predictive analytics and computer vision to fine-tuning generative models. I thrive at the intersection of complex mathematics, clean software engineering, and solving real-world domain challenges.
+                    </p>
                 </div>
-
             </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number">
-                    8+
-                </div>
-
-                <div class="stat-label">
-                    Kaggle Projects
-                </div>
-
-            </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number">
-                    250+
-                </div>
-
-                <div class="stat-label">
-                    Python Problems
-                </div>
-
-            </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number">
-                    7.22
-                </div>
-
-                <div class="stat-label">
-                    CGPA / 10
-                </div>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =========================================================
+         SKILLS SECTION
+    ========================================================= -->
+    <section id="skills" class="reveal">
+        <div class="container">
+            <div class="section-label">Capabilities</div>
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-description">A multi-disciplinary stack engineered for building modern, scalable AI systems.</p>
 
-</section>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Machine Learning & Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Neural Networks</span>
+                    </div>
+                </div>
 
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Generative AI & LLMs</h3>
+                    <div class="skill-tags">
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">RAG Systems</span>
+                        <span class="tag">HuggingFace</span>
+                        <span class="tag">Fine-Tuning</span>
+                    </div>
+                </div>
 
+                <div class="skill-card">
+                    <div class="skill-icon">👁️</div>
+                    <h3>Computer Vision & NLP</h3>
+                    <div class="skill-tags">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">YOLO</span>
+                        <span class="tag">NLTK</span>
+                        <span class="tag">spaCy</span>
+                        <span class="tag">BERT</span>
+                    </div>
+                </div>
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Languages & Core</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
 
-<section id="about">
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Engineering & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">PowerBI</span>
+                        <span class="tag">ETL Pipelines</span>
+                    </div>
+                </div>
 
-    <div class="container">
-
-        <div class="section-label">
-            01 / ABOUT
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>MLOps & Deployment</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">AWS / GCP</span>
+                        <span class="tag">MLflow</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h2 class="section-title">
-            Engineering mindset.<br>
-            AI-driven execution.
-        </h2>
+    <!-- =========================================================
+         PROJECTS SECTION
+    ========================================================= -->
+    <section id="projects" class="reveal">
+        <div class="container">
+            <div class="projects-header">
+                <div>
+                    <div class="section-label">Portfolio</div>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="filters">
+                    <button class="filter active">All</button>
+                    <button class="filter">Deep Learning</button>
+                    <button class="filter">NLP/LLM</button>
+                    <button class="filter">Vision</button>
+                </div>
+            </div>
 
-        <p class="section-description">
-
-            I combine engineering fundamentals with machine learning,
-            data science and modern AI technologies to build
-            practical intelligent systems.
-
-        </p>
-
-
-        <div class="about-grid">
-
-
-            <div class="about-card reveal">
-
-                <div class="about-avatar">
-                    SR
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project">
+                    <div class="project-number">01 / PROJECT</div>
+                    <h3>Autonomous Defect Detection</h3>
+                    <p>Computer vision system utilizing fine-tuned YOLOv8 models for real-time defect identification in manufacturing lines with high precision.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">PyTorch</span>
+                        <span class="project-tag">OpenCV</span>
+                        <span class="project-tag">YOLOv8</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Demo</a>
+                    </div>
                 </div>
 
-                <h3>
-                    Saurabh Raj Varma
-                </h3>
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="project-number">02 / PROJECT</div>
+                    <h3>RAG Document Query Engine</h3>
+                    <p>Retrieval-Augmented Generation pipeline leveraging vector databases and Llama3 to perform contextual Q&A over massive technical documents.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">FAISS</span>
+                        <span class="project-tag">FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Demo</a>
+                    </div>
+                </div>
 
-                <p>
-                    AI/ML Engineer · Data Scientist
-                </p>
-
+                <!-- Project 3 -->
+                <div class="project">
+                    <div class="project-number">03 / PROJECT</div>
+                    <h3>Predictive Financial Analytics</h3>
+                    <p>End-to-end machine learning model designed to forecast market trends and perform risk assessment using gradient-boosted trees and time series modeling.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">XGBoost</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">Scikit-Learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">Demo</a>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="about-content reveal">
-
-                <p>
-
-                    I am an
-
-                    <span class="highlight">
-                        AI/ML-focused engineer
-                    </span>
-
-                    with a background in Civil Engineering from
-                    IIT (ISM) Dhanbad.
-
-                </p>
-
-
-                <p>
-
-                    My work spans
-
-                    <span class="highlight">
-                        machine learning, deep learning,
-                        computer vision, time-series forecasting,
-                        financial analytics, NLP, LLMs and AI applications.
-                    </span>
-
-                </p>
-
-
-                <p>
-
-                    I enjoy working across the complete lifecycle:
-                    understanding a problem, preparing data,
-                    experimenting with models, evaluating results,
-                    building applications and turning prototypes
-                    into usable systems.
-
-                </p>
-
-
-                <p>
-
-                    My portfolio includes both traditional ML projects
-                    and modern AI systems such as an offline disaster
-                    response platform and an AI voice assistant.
-
-                </p>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =========================================================
+         KAGGLE SECTION
+    ========================================================= -->
+    <section id="kaggle" class="kaggle-section reveal">
+        <div class="container">
+            <div class="section-label">Competitive Data Science</div>
+            <h2 class="section-title">Kaggle Benchmarks</h2>
 
-</section>
+            <div class="kaggle-layout">
+                <div class="kaggle-profile">
+                    <div class="kaggle-logo">k</div>
+                    <h3>Kaggle Competitor</h3>
+                    <p>Solving complex benchmark problems, engineering domain features, and tuning deep architectures against global competitive datasets.</p>
+                    <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" class="btn btn-primary">Visit Profile</a>
+                </div>
 
-
-
-<!-- =========================================================
-     SKILLS
-========================================================= -->
-
-<section id="skills">
-
-    <div class="container">
-
-        <div class="section-label">
-            02 / SKILLS
+                <div class="kaggle-list">
+                    <div class="kaggle-item">
+                        <small>Notebooks</small>
+                        <h4>Exploratory Data Analysis & Modeling</h4>
+                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">View Notebooks →</a>
+                    </div>
+                    <div class="kaggle-item">
+                        <small>Datasets</small>
+                        <h4>Curated ML Benchmarks</h4>
+                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">Explore Datasets →</a>
+                    </div>
+                    <div class="kaggle-item">
+                        <small>Competitions</small>
+                        <h4>Computer Vision Challenge</h4>
+                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">See Ranking →</a>
+                    </div>
+                    <div class="kaggle-item">
+                        <small>Competitions</small>
+                        <h4>Predictive Modeling Contest</h4>
+                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">See Solution →</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h2 class="section-title">
-            Tools I build with.
-        </h2>
+    <!-- =========================================================
+         ACHIEVEMENTS SECTION
+    ========================================================= -->
+    <section id="achievements" class="reveal">
+        <div class="container">
+            <div class="section-label">Milestones</div>
+            <h2 class="section-title">Key Achievements</h2>
 
-        <p class="section-description">
-
-            A practical stack covering programming,
-            machine learning, deep learning, analytics
-            and modern AI application development.
-
-        </p>
-
-
-        <div class="skills-grid">
-
-
-            <!-- Programming -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    💻
+            <div class="achievement-grid">
+                <div class="achievement">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Hackathon Winner</h3>
+                    <p>Secured 1st place in a national-level AI hackathon by developing a real-time computer vision deployment for safety compliance.</p>
                 </div>
 
-                <h3>
-                    Programming
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">Python</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
-
+                <div class="achievement">
+                    <div class="achievement-icon">📜</div>
+                    <h3>AI/ML Certification</h3>
+                    <p>Earned advanced specialization certifications in Deep Learning, TensorFlow, and Production ML Workflows.</p>
                 </div>
 
+                <div class="achievement">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active maintainer and contributor to popular open-source Python Machine Learning repositories and utilities.</p>
+                </div>
             </div>
-
-
-            <!-- ML -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    🧠
-                </div>
-
-                <h3>
-                    Machine Learning
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">Scikit-Learn</span>
-                    <span class="tag">Random Forest</span>
-                    <span class="tag">XGBoost</span>
-                    <span class="tag">SVM</span>
-                    <span class="tag">Regression</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Deep Learning -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    🔬
-                </div>
-
-                <h3>
-                    Deep Learning
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">Keras</span>
-                    <span class="tag">LSTM</span>
-                    <span class="tag">CNN</span>
-                    <span class="tag">Transformers</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- AI -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    🤖
-                </div>
-
-                <h3>
-                    AI Systems
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">LLMs</span>
-                    <span class="tag">Gemma</span>
-                    <span class="tag">Voice AI</span>
-                    <span class="tag">Conversational AI</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Data -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    📊
-                </div>
-
-                <h3>
-                    Data Science
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">Pandas</span>
-                    <span class="tag">NumPy</span>
-                    <span class="tag">Matplotlib</span>
-                    <span class="tag">Seaborn</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Analytics -->
-
-            <div class="skill-card reveal">
-
-                <div class="skill-icon">
-                    📈
-                </div>
-
-                <h3>
-                    Analytics
-                </h3>
-
-                <div class="skill-tags">
-
-                    <span class="tag">Power BI</span>
-                    <span class="tag">DAX</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">Jupyter</span>
-                    <span class="tag">Colab</span>
-
-                </div>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- =========================================================
+         EDUCATION SECTION
+    ========================================================= -->
+    <section id="education" class="reveal">
+        <div class="container">
+            <div class="section-label">Background</div>
+            <h2 class="section-title">Education & Academic Journey</h2>
 
-</section>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">BACHELOR'S DEGREE</div>
+                    <h3>Computer Science & Engineering</h3>
+                    <h4>IIT (ISM) Dhanbad</h4>
+                    <p>Focused on Data Structures, Algorithms, Machine Learning Theory, Computer Vision, Artificial Intelligence, and Database Systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =========================================================
+         CONTACT SECTION
+    ========================================================= -->
+    <section id="contact" class="reveal">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Let's build something <span class="gradient-text">intelligent</span> together.</h2>
+                <p>Open for collaborative AI projects, machine learning engineering roles, and innovative consulting.</p>
 
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <span>📧</span>
+                        <a href="mailto:22je0881@iitism.ac.in">22je0881@iitism.ac.in</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <span>📱</span>
+                        <a href="tel:+919174695086">+91 9174695086</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <span>📱</span>
+                        <a href="tel:+917879254197">+91 7879254197</a>
+                    </div>
+                </div>
 
-<!-- =========================================================
-     PROJECTS
-========================================================= -->
+                <div class="contact-buttons">
+                    <a href="mailto:22je0881@iitism.ac.in" class="btn btn-primary">Send Email</a>
+                    <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="btn btn-secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-
-    <div class="container">
-
-        <div class="projects-header">
-
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+    <footer>
+        <div class="container footer-inner">
             <div>
-
-                <div class="section-label">
-                    03 / PROJECTS
-                </div>
-
-                <h2 class="section-title">
-                    Selected work.
-                </h2>
-
-                <p class="section-description">
-
-                    A collection of machine learning,
-                    AI and data-driven projects.
-
-                </p>
-
+                © <span id="year"></span> Saurabh Raj Varma. All rights reserved.
             </div>
 
+            <div class="footer-links">
+                <a href="https://github.com/SAURABHRAJVARMA" target="_blank">GitHub</a>
+                <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">Kaggle</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
         </div>
-
-
-        <!-- FILTERS -->
-
-        <div class="filters">
-
-            <button
-                class="filter active"
-                data-filter="all"
-            >
-                All
-            </button>
-
-            <button
-                class="filter"
-                data-filter="ai"
-            >
-                AI
-            </button>
-
-            <button
-                class="filter"
-                data-filter="ml"
-            >
-                Machine Learning
-            </button>
-
-            <button
-                class="filter"
-                data-filter="timeseries"
-            >
-                Time Series
-            </button>
-
-            <button
-                class="filter"
-                data-filter="vision"
-            >
-                Computer Vision
-            </button>
-
-            <button
-                class="filter"
-                data-filter="analytics"
-            >
-                Analytics
-            </button>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT 01 -->
-
-            <article
-                class="project reveal"
-                data-category="ai"
-            >
-
-                <div class="project-number">
-                    PROJECT / 01
-                </div>
-
-                <h3>
-                    DisasterNet AI
-                </h3>
-
-                <p>
-
-                    Offline-first disaster response intelligence
-                    system designed to support emergency analysis,
-                    rescue prioritization, multilingual communication
-                    and situation reporting.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">AI</span>
-                    <span class="project-tag">LLM</span>
-                    <span class="project-tag">Gemma</span>
-                    <span class="project-tag">Offline AI</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/DisasterNet-AI"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 02 -->
-
-            <article
-                class="project reveal"
-                data-category="ai"
-            >
-
-                <div class="project-number">
-                    PROJECT / 02
-                </div>
-
-                <h3>
-                    AI Saurabh VoiceBot
-                </h3>
-
-                <p>
-
-                    AI voice assistant combining conversational AI,
-                    backend services and a modern web interface
-                    for interactive AI-powered communication.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">LLM</span>
-                    <span class="project-tag">Voice AI</span>
-                    <span class="project-tag">FastAPI</span>
-                    <span class="project-tag">Next.js</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/ai-saurabh-voicebot"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 03 -->
-
-            <article
-                class="project reveal"
-                data-category="timeseries"
-            >
-
-                <div class="project-number">
-                    PROJECT / 03
-                </div>
-
-                <h3>
-                    Stock Price Predictor
-                </h3>
-
-                <p>
-
-                    Multi-model stock forecasting project comparing
-                    Auto-ARIMA, Random Forest and LSTM approaches
-                    across Indian stocks.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">LSTM</span>
-                    <span class="project-tag">Auto-ARIMA</span>
-                    <span class="project-tag">Random Forest</span>
-                    <span class="project-tag">Forecasting</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/Stock-Prices-Predictor"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 04 -->
-
-            <article
-                class="project reveal"
-                data-category="ml"
-            >
-
-                <div class="project-number">
-                    PROJECT / 04
-                </div>
-
-                <h3>
-                    Digital Payment Fraud Detection
-                </h3>
-
-                <p>
-
-                    Machine learning project focused on identifying
-                    suspicious digital payment transactions through
-                    data preprocessing, modeling and evaluation.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">Fraud Detection</span>
-                    <span class="project-tag">ML</span>
-                    <span class="project-tag">Classification</span>
-                    <span class="project-tag">FinTech</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/digital-payment-fraud-detection"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 05 -->
-
-            <article
-                class="project reveal"
-                data-category="analytics"
-            >
-
-                <div class="project-number">
-                    PROJECT / 05
-                </div>
-
-                <h3>
-                    Trader Performance vs Market Sentiment
-                </h3>
-
-                <p>
-
-                    Data science project investigating relationships
-                    between trader performance and market sentiment
-                    using exploratory analysis and financial data.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">Data Science</span>
-                    <span class="project-tag">Finance</span>
-                    <span class="project-tag">EDA</span>
-                    <span class="project-tag">Analytics</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/Trader-Performance-vs-Market-Sentiment"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 06 -->
-
-            <article
-                class="project reveal"
-                data-category="vision"
-            >
-
-                <div class="project-number">
-                    PROJECT / 06
-                </div>
-
-                <h3>
-                    Face Emotion Recognition
-                </h3>
-
-                <p>
-
-                    Computer vision application for recognizing
-                    facial emotions and supporting multi-user
-                    emotion recognition workflows.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">Computer Vision</span>
-                    <span class="project-tag">Deep Learning</span>
-                    <span class="project-tag">Emotion AI</span>
-                    <span class="project-tag">CNN</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/face-emotion-multiuser-recognition"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 07 -->
-
-            <article
-                class="project reveal"
-                data-category="ml"
-            >
-
-                <div class="project-number">
-                    PROJECT / 07
-                </div>
-
-                <h3>
-                    Rainfall Prediction Model
-                </h3>
-
-                <p>
-
-                    Machine learning regression project comparing
-                    multiple algorithms for rainfall prediction
-                    with cross-validation and model evaluation.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">Regression</span>
-                    <span class="project-tag">XGBoost</span>
-                    <span class="project-tag">Random Forest</span>
-                    <span class="project-tag">SVR</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/Rainfall-prediction-model"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROJECT 08 -->
-
-            <article
-                class="project reveal"
-                data-category="analytics"
-            >
-
-                <div class="project-number">
-                    PROJECT / 08
-                </div>
-
-                <h3>
-                    E-Commerce Analytics
-                </h3>
-
-                <p>
-
-                    Business intelligence project using Power BI
-                    and DAX to transform e-commerce data into
-                    actionable sales insights.
-
-                </p>
-
-                <div class="project-tags">
-
-                    <span class="project-tag">Power BI</span>
-                    <span class="project-tag">DAX</span>
-                    <span class="project-tag">BI</span>
-                    <span class="project-tag">Analytics</span>
-
-                </div>
-
-                <div class="project-links">
-
-                    <a
-                        href="https://github.com/SAURABHRAJVARMA/E-commerce"
-                        target="_blank"
-                        class="project-link"
-                    >
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     KAGGLE
-========================================================= -->
-
-<section id="kaggle" class="kaggle-section">
-
-    <div class="container">
-
-        <div class="section-label">
-            04 / KAGGLE
-        </div>
-
-        <h2 class="section-title">
-            Competitive data science.
-        </h2>
-
-        <p class="section-description">
-
-            Machine learning experiments, competitions,
-            computer vision, audio classification,
-            forecasting and applied data science.
-
-        </p>
-
-
-        <div class="kaggle-layout">
-
-
-            <div class="kaggle-profile reveal">
-
-                <div class="kaggle-logo">
-                    K
-                </div>
-
-                <h3>
-                    Kaggle
-                </h3>
-
-                <p>
-
-                    Explore my complete Kaggle profile,
-                    notebooks and competition work.
-
-                </p>
-
-                <a
-                    href="https://www.kaggle.com/saurabhrajvarma"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    View Kaggle Profile ↗
-                </a>
-
-            </div>
-
-
-            <div class="kaggle-list">
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Audio Classification
-                    </small>
-
-                    <h4>
-                        BirdCLEF 2026
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/birdclef-2026-audio-classification-0-922"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Computer Vision
-                    </small>
-
-                    <h4>
-                        ICDAR 2026 CircleID Pen
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/icdar2026-circleid-pen-0-92697"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Medical NLP
-                    </small>
-
-                    <h4>
-                        Mammography Report Classification
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/spr-2026-mammography-report-classification"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        NLP / Classification
-                    </small>
-
-                    <h4>
-                        Multi-Head TF-IDF Ensemble
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/multi-head-tf-idf-ensemble-binary-classification"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Flood Modelling
-                    </small>
-
-                    <h4>
-                        UrbanFloodBench LSTM
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/urbanfloodbench-flood-modelling-lstm"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Re-Identification
-                    </small>
-
-                    <h4>
-                        Jaguar Re-Identification
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/jaguar-re-identification"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Time Series
-                    </small>
-
-                    <h4>
-                        Quantitative Time Series Forecasting
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/quantitive-time-series-forecasting-hedge-funs"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-
-                <div class="kaggle-item reveal">
-
-                    <small>
-                        Classification
-                    </small>
-
-                    <h4>
-                        Customer Churn Prediction
-                    </h4>
-
-                    <a
-                        href="https://www.kaggle.com/code/saurabhrajvarma/predict-customer-churn-classification-model"
-                        target="_blank"
-                    >
-                        View Notebook →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     ACHIEVEMENTS
-========================================================= -->
-
-<section id="achievements">
-
-    <div class="container">
-
-        <div class="section-label">
-            05 / ACHIEVEMENTS
-        </div>
-
-        <h2 class="section-title">
-            Results that matter.
-        </h2>
-
-        <p class="section-description">
-
-            Competitive programming, Kaggle competitions
-            and applied machine learning achievements.
-
-        </p>
-
-
-        <div class="achievement-grid">
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🏆
-                </div>
-
-                <h3>
-                    Kaggle Expert
-                </h3>
-
-                <p>
-                    Competitive data science and machine learning
-                    work across multiple domains.
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🥉
-                </div>
-
-                <h3>
-                    AI Mathematical Olympiad
-                </h3>
-
-                <p>
-                    Bronze Medal · Kaggle
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🥈
-                </div>
-
-                <h3>
-                    SPR 2026 Mammography
-                </h3>
-
-                <p>
-                    Silver Medal · Kaggle Notebook
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🎯
-                </div>
-
-                <h3>
-                    ICDAR 2026 CircleID
-                </h3>
-
-                <p>
-                    Ranked #64 / 389
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    📊
-                </div>
-
-                <h3>
-                    Customer Churn
-                </h3>
-
-                <p>
-                    Ranked #66 / 4,142
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🧮
-                </div>
-
-                <h3>
-                    AI Mathematical Olympiad
-                </h3>
-
-                <p>
-                    Ranked #230 / 4,138
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🐍
-                </div>
-
-                <h3>
-                    Python Problem Solving
-                </h3>
-
-                <p>
-                    250+ algorithmic problems solved.
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    ⚡
-                </div>
-
-                <h3>
-                    Data Optimization
-                </h3>
-
-                <p>
-                    Extensive Pandas and SQL optimization
-                    and data analysis practice.
-                </p>
-
-            </div>
-
-
-            <div class="achievement reveal">
-
-                <div class="achievement-icon">
-                    🧠
-                </div>
-
-                <h3>
-                    ML Experimentation
-                </h3>
-
-                <p>
-                    Experience benchmarking multiple machine
-                    learning algorithms across datasets.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     EDUCATION
-========================================================= -->
-
-<section id="education">
-
-    <div class="container">
-
-        <div class="section-label">
-            06 / EDUCATION
-        </div>
-
-        <h2 class="section-title">
-            Academic foundation.
-        </h2>
-
-        <p class="section-description">
-
-            Engineering fundamentals combined with
-            data science and AI specialization.
-
-        </p>
-
-
-        <div class="timeline">
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2022 — 2026
-                </div>
-
-                <h3>
-                    Indian Institute of Technology
-                    (Indian School of Mines), Dhanbad
-                </h3>
-
-                <h4>
-                    B.Tech — Civil Engineering
-                </h4>
-
-                <p>
-
-                    CGPA: 7.22 / 10
-
-                    <br>
-
-                    Focus areas include water resources,
-                    engineering analysis, computational methods,
-                    data science and machine learning.
-
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2021
-                </div>
-
-                <h3>
-                    Class XII
-                </h3>
-
-                <h4>
-                    Jawahar Navodaya Vidyalaya
-                </h4>
-
-                <p>
-                    88.2%
-                </p>
-
-            </div>
-
-
-            <div class="timeline-item reveal">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    2019
-                </div>
-
-                <h3>
-                    Class X
-                </h3>
-
-                <h4>
-                    Jawahar Navodaya Vidyalaya,
-                    Nowgong, Chhatarpur
-                </h4>
-
-                <p>
-                    85.6%
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <div class="contact-box reveal">
-
-            <div class="section-label">
-                07 / CONTACT
-            </div>
-
-            <h2>
-                Let's build something
-                <span class="gradient-text">
-                    intelligent.
-                </span>
-            </h2>
-
-            <p>
-
-                Interested in AI/ML, Data Science,
-                AI Engineering or building intelligent products?
-
-                Explore my work and connect with me.
-
-            </p>
-
-
-            <div class="contact-buttons">
-
-                <a
-                    href="https://github.com/SAURABHRAJVARMA"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    GitHub ↗
-                </a>
-
-
-                <a
-                    href="https://www.kaggle.com/saurabhrajvarma"
-                    target="_blank"
-                    class="btn btn-secondary"
-                >
-                    Kaggle ↗
-                </a>
-
-
-                <!--
-                    OPTIONAL:
-                    When you upload resume.pdf to the same repository,
-                    change this button to:
-
-                    href="resume.pdf"
-                -->
-
-                <a
-                    href="resume.pdf"
-                    target="_blank"
-                    class="btn btn-secondary"
-                >
-                    Resume ↗
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer>
-
-    <div class="container footer-inner">
-
-        <div>
-            © <span id="year"></span>
-            Saurabh Raj Varma.
-            All rights reserved.
-        </div>
-
-
-        <div class="footer-links">
-
-            <a
-                href="https://github.com/SAURABHRAJVARMA"
-                target="_blank"
-            >
-                GitHub
-            </a>
-
-            <a
-                href="https://www.kaggle.com/saurabhrajvarma"
-                target="_blank"
-            >
-                Kaggle
-            </a>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================= */
-
-    const mobileMenu =
-        document.getElementById("mobileMenu");
-
-    const navLinks =
-        document.getElementById("navLinks");
-
-
-    mobileMenu.addEventListener(
-        "click",
-        () => {
-
-            navLinks.classList.toggle("open");
-
-        }
-    );
-
-
-    /* Close mobile menu */
-
-    document.querySelectorAll(
-        ".nav-links a"
-    ).forEach(link => {
-
-        link.addEventListener(
-            "click",
-            () => {
-
-                navLinks.classList.remove("open");
-
-            }
-        );
-
-    });
-
-
-
-    /* =========================================================
-       PROJECT FILTER
-    ========================================================= */
-
-    const filters =
-        document.querySelectorAll(".filter");
-
-    const projects =
-        document.querySelectorAll(".project");
-
-
-    filters.forEach(filter => {
-
-        filter.addEventListener(
-            "click",
-            () => {
-
-                filters.forEach(
-                    item =>
-                        item.classList.remove("active")
-                );
-
-                filter.classList.add("active");
-
-
-                const selected =
-                    filter.dataset.filter;
-
-
-                projects.forEach(project => {
-
-                    const category =
-                        project.dataset.category;
-
-
-                    if (
-                        selected === "all" ||
-                        category === selected
-                    ) {
-
-                        project.style.display =
-                            "flex";
-
-                        setTimeout(
-                            () => {
-                                project.style.opacity =
-                                    "1";
-                            },
-                            20
-                        );
-
-                    }
-
-                    else {
-
-                        project.style.opacity =
-                            "0";
-
-                        setTimeout(
-                            () => {
-                                project.style.display =
-                                    "none";
-                            },
-                            200
-                        );
-
-                    }
-
-                });
-
-            }
-        );
-
-    });
-
-
-
-    /* =========================================================
-       SCROLL REVEAL
-    ========================================================= */
-
-    const observer =
-        new IntersectionObserver(
-            entries => {
-
-                entries.forEach(entry => {
-
-                    if (
-                        entry.isIntersecting
-                    ) {
-
-                        entry.target.classList.add(
-                            "visible"
-                        );
-
-                        observer.unobserve(
-                            entry.target
-                        );
-
-                    }
-
-                });
-
-            },
-            {
-                threshold: 0.12
-            }
-        );
-
-
-    document
-        .querySelectorAll(".reveal")
-        .forEach(element => {
-
-            observer.observe(element);
-
+    </footer>
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu navigation toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            mobileMenuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
         });
 
+        // Close mobile nav menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                mobileMenuBtn.textContent = '☰';
+            });
+        });
 
+        // Scroll reveal animation observer
+        const observerOptions = {
+            root: null,
+            threshold: 0.15
+        };
 
-    /* =========================================================
-       CURRENT YEAR
-    ========================================================= */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
 
-    document.getElementById("year")
-        .textContent =
-        new Date().getFullYear();
-
-
-
-    /* =========================================================
-       NAVBAR SCROLL EFFECT
-    ========================================================= */
-
-    const navbar =
-        document.querySelector("nav");
-
-
-    window.addEventListener(
-        "scroll",
-        () => {
-
-            if (window.scrollY > 40) {
-
-                navbar.style.background =
-                    "rgba(5,7,13,0.88)";
-
-            }
-
-            else {
-
-                navbar.style.background =
-                    "rgba(5,7,13,0.65)";
-
-            }
-
-        }
-    );
-
-</script>
-
-
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
