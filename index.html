@@ -914,11 +914,50 @@
             transform: translateY(-2px);
         }
 
-        .contact-info-card a {
+        .contact-info-card .contact-detail {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .contact-info-card .contact-label {
+            display: block;
+            color: #7f8aa1;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .contact-info-card .contact-value {
             color: #ffffff !important;
             font-weight: 500;
-            font-size: 15px;
+            font-size: 14px;
             text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-action {
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            padding: 8px 12px;
+            border-radius: 9px;
+            border: 1px solid rgba(124, 92, 255, 0.35);
+            background: rgba(124, 92, 255, 0.12);
+            color: #ffffff !important;
+            font-size: 11px !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+            transition: all 0.25s ease;
+        }
+
+        .contact-action:hover {
+            transform: translateY(-2px);
+            border-color: rgba(0, 212, 255, 0.55);
+            background: rgba(0, 212, 255, 0.14);
+            box-shadow: 0 8px 22px rgba(0, 212, 255, 0.12);
         }
 
         .contact-buttons {
@@ -1023,6 +1062,9 @@
             .footer-inner { flex-direction: column; text-align: center; }
             .contact-box { padding: 45px 20px; }
             .contact-info-grid { flex-direction: column; }
+            .contact-info-card { width: 100%; justify-content: flex-start; }
+            .contact-info-card .contact-detail { text-align: left; }
+            .contact-action { margin-left: auto; }
         }
     </style>
 </head>
@@ -1049,7 +1091,7 @@
             <div class="nav-social">
                 <a href="https://github.com/SAURABHRAJVARMA" target="_blank" aria-label="GitHub">GH</a>
                 <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" aria-label="Kaggle">KG</a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">IN</a>
+                <a href="https://www.linkedin.com/in/saurabh-raj-varma-ba03b5368/" target="_blank" aria-label="LinkedIn">IN</a>
             </div>
 
             <button class="mobile-menu" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
@@ -1401,21 +1443,37 @@
                 <div class="contact-info-grid">
                     <div class="contact-info-card">
                         <span>📧</span>
-                        <a href="mailto:22je0881@iitism.ac.in">22je0881@iitism.ac.in</a>
+                        <div class="contact-detail">
+                            <span class="contact-label">Email</span>
+                            <a class="contact-value" href="mailto:22je0881@iitism.ac.in">22je0881@iitism.ac.in</a>
+                        </div>
+                        <a class="contact-action" href="mailto:22je0881@iitism.ac.in">Email Me</a>
                     </div>
+
                     <div class="contact-info-card">
                         <span>📱</span>
-                        <a href="tel:+919174695086">+91 9174695086</a>
+                        <div class="contact-detail">
+                            <span class="contact-label">Mobile</span>
+                            <a class="contact-value" href="tel:+919174695086">+91 9174695086</a>
+                        </div>
+                        <a class="contact-action" href="tel:+919174695086">Call</a>
                     </div>
+
                     <div class="contact-info-card">
                         <span>📱</span>
-                        <a href="tel:+917879254197">+91 7879254197</a>
+                        <div class="contact-detail">
+                            <span class="contact-label">Mobile</span>
+                            <a class="contact-value" href="tel:+917879254197">+91 7879254197</a>
+                        </div>
+                        <a class="contact-action" href="tel:+917879254197">Call</a>
                     </div>
                 </div>
 
                 <div class="contact-buttons">
                     <a href="mailto:22je0881@iitism.ac.in" class="btn btn-primary">Send Email</a>
                     <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="btn btn-secondary">GitHub Profile</a>
+                    <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" class="btn btn-secondary">Kaggle Profile</a>
+                    <a href="https://www.linkedin.com/in/saurabh-raj-varma-ba03b5368/" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
                 </div>
             </div>
         </div>
@@ -1433,7 +1491,7 @@
             <div class="footer-links">
                 <a href="https://github.com/SAURABHRAJVARMA" target="_blank">GitHub</a>
                 <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">Kaggle</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/saurabh-raj-varma-ba03b5368/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>
