@@ -118,7 +118,7 @@
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
-            padding: 14px 24px !important;
+            padding: 14px 22px !important;
             border-radius: 11px !important;
             font-size: 14px !important;
             font-weight: 600 !important;
@@ -311,12 +311,6 @@
             gap: 12px;
         }
 
-        /* Hero Visual */
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-        }
-
         .ai-orb {
             width: min(360px, 75vw);
             aspect-ratio: 1;
@@ -364,56 +358,6 @@
             z-index: 3;
         }
 
-        .orb-dot {
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            background: #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 15px var(--secondary);
-        }
-
-        .orb-dot.one { top: 18%; left: 24%; }
-        .orb-dot.two { right: 19%; top: 34%; }
-        .orb-dot.three { bottom: 20%; left: 29%; }
-
-        /* =========================================================
-           STATS
-        ========================================================= */
-        .stats {
-            margin-top: 80px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .stat {
-            padding: 28px 20px;
-            text-align: center;
-            border-right: 1px solid var(--border);
-        }
-
-        .stat:last-child {
-            border-right: none;
-        }
-
-        .stat-number {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            background: linear-gradient(90deg, white, #91ddff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .stat-label {
-            color: var(--muted);
-            font-size: 12px;
-        }
-
         /* =========================================================
            ABOUT
         ========================================================= */
@@ -432,17 +376,6 @@
             background: var(--card);
             position: relative;
             overflow: hidden;
-        }
-
-        .about-card::before {
-            content: "";
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            background: rgba(124, 92, 255, 0.13);
-            filter: blur(60px);
-            top: -60px;
-            right: -40px;
         }
 
         .about-avatar {
@@ -477,11 +410,6 @@
             margin-bottom: 20px;
         }
 
-        .highlight {
-            color: white;
-            font-weight: 600;
-        }
-
         /* =========================================================
            SKILLS
         ========================================================= */
@@ -506,22 +434,9 @@
             border-color: rgba(124, 92, 255, 0.25);
         }
 
-        .skill-icon {
-            font-size: 24px;
-            margin-bottom: 13px;
-        }
-
-        .skill-card h3 {
-            font-family: "Space Grotesk", sans-serif;
-            margin-bottom: 13px;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-        }
-
+        .skill-icon { font-size: 24px; margin-bottom: 13px; }
+        .skill-card h3 { font-family: "Space Grotesk", sans-serif; margin-bottom: 13px; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; }
         .tag {
             padding: 6px 9px;
             border-radius: 7px;
@@ -534,38 +449,6 @@
         /* =========================================================
            PROJECTS
         ========================================================= */
-        .projects-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            gap: 30px;
-        }
-
-        .filters {
-            margin-top: 38px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .filter {
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, 0.035);
-            color: #aeb7c8;
-            padding: 8px 14px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: 0.25s;
-        }
-
-        .filter:hover,
-        .filter.active {
-            color: white;
-            background: rgba(124, 92, 255, 0.16);
-            border-color: rgba(124, 92, 255, 0.4);
-        }
-
         .projects-grid {
             margin-top: 28px;
             display: grid;
@@ -582,57 +465,18 @@
             flex-direction: column;
             min-height: 365px;
             transition: 0.35s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project::before {
-            content: "";
-            position: absolute;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background: rgba(124, 92, 255, 0.08);
-            filter: blur(55px);
-            top: -90px;
-            right: -80px;
         }
 
         .project:hover {
             transform: translateY(-7px);
             background: var(--card-hover);
             border-color: rgba(124, 92, 255, 0.28);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
         }
 
-        .project-number {
-            color: #707a90;
-            font-size: 11px;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
-
-        .project h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 1.7;
-            margin-bottom: 18px;
-        }
-
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: auto;
-            margin-bottom: 22px;
-        }
-
+        .project-number { color: #707a90; font-size: 11px; margin-bottom: 25px; }
+        .project h3 { font-family: "Space Grotesk", sans-serif; font-size: 22px; margin-bottom: 10px; }
+        .project p { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; margin-bottom: 22px; }
         .project-tag {
             font-size: 10px;
             color: #bfc7d8;
@@ -642,11 +486,7 @@
             border-radius: 6px;
         }
 
-        .project-links {
-            display: flex;
-            gap: 8px;
-        }
-
+        .project-links { display: flex; gap: 8px; }
         .project-link {
             flex: 1;
             text-align: center;
@@ -655,212 +495,10 @@
             border-radius: 9px;
             font-size: 11px;
             color: #c6cedd;
-            transition: 0.25s;
-        }
-
-        .project-link:hover {
-            color: white;
-            border-color: rgba(0, 212, 255, 0.35);
         }
 
         /* =========================================================
-           KAGGLE
-        ========================================================= */
-        .kaggle-section {
-            background: radial-gradient(circle at 80% 50%, rgba(0, 212, 255, 0.06), transparent 35%);
-        }
-
-        .kaggle-layout {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 20px;
-        }
-
-        .kaggle-profile {
-            padding: 35px;
-            border-radius: var(--radius);
-            background: linear-gradient(145deg, rgba(0, 212, 255, 0.09), rgba(124, 92, 255, 0.07));
-            border: 1px solid var(--border);
-        }
-
-        .kaggle-logo {
-            width: 60px;
-            height: 60px;
-            display: grid;
-            place-items: center;
-            border-radius: 16px;
-            background: #20beff;
-            color: #041018;
-            font-weight: 900;
-            font-size: 25px;
-            margin-bottom: 22px;
-        }
-
-        .kaggle-profile h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
-
-        .kaggle-profile p {
-            color: var(--muted);
-            font-size: 14px;
-            margin-bottom: 22px;
-        }
-
-        .kaggle-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .kaggle-item {
-            padding: 20px;
-            border: 1px solid var(--border);
-            border-radius: 15px;
-            background: var(--card);
-            transition: 0.3s;
-        }
-
-        .kaggle-item:hover {
-            transform: translateY(-4px);
-            border-color: rgba(0, 212, 255, 0.3);
-        }
-
-        .kaggle-item small {
-            color: var(--secondary);
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .kaggle-item h4 {
-            margin-top: 6px;
-            margin-bottom: 12px;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 15px;
-        }
-
-        .kaggle-item a {
-            font-size: 11px;
-            color: #aeb7c8;
-        }
-
-        .kaggle-item a:hover {
-            color: white;
-        }
-
-        /* =========================================================
-           ACHIEVEMENTS
-        ========================================================= */
-        .achievement-grid {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .achievement {
-            padding: 28px;
-            border: 1px solid var(--border);
-            background: var(--card);
-            border-radius: var(--radius);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .achievement::after {
-            content: "";
-            position: absolute;
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: rgba(124, 92, 255, 0.12);
-            filter: blur(35px);
-            right: -30px;
-            top: -30px;
-        }
-
-        .achievement-icon {
-            font-size: 30px;
-            margin-bottom: 18px;
-        }
-
-        .achievement h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 19px;
-            margin-bottom: 7px;
-        }
-
-        .achievement p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        /* =========================================================
-           EDUCATION
-        ========================================================= */
-        .timeline {
-            margin-top: 50px;
-            max-width: 850px;
-            position: relative;
-        }
-
-        .timeline::before {
-            content: "";
-            position: absolute;
-            left: 9px;
-            top: 5px;
-            bottom: 5px;
-            width: 1px;
-            background: linear-gradient(var(--primary), rgba(124, 92, 255, 0));
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-left: 42px;
-            margin-bottom: 45px;
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: 3px;
-            top: 4px;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background: var(--primary);
-            box-shadow: 0 0 20px rgba(124, 92, 255, 0.8);
-        }
-
-        .timeline-date {
-            color: var(--secondary);
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 7px;
-        }
-
-        .timeline-item h3 {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 22px;
-            margin-bottom: 4px;
-        }
-
-        .timeline-item h4 {
-            color: #a9b2c4;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .timeline-item p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        /* =========================================================
-           CONTACT
+           CONTACT SECTION & CARDS (UPDATED CSS)
         ========================================================= */
         .contact-box {
             margin-top: 50px;
@@ -884,7 +522,7 @@
             color: var(--muted);
             max-width: 600px;
             margin: auto;
-            margin-bottom: 28px;
+            margin-bottom: 35px;
         }
 
         .contact-info-grid {
@@ -898,73 +536,66 @@
         .contact-info-card {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border);
-            padding: 14px 20px;
-            border-radius: 14px;
+            padding: 16px 20px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            transition: 0.3s;
+            gap: 14px;
+            transition: all 0.3s ease;
             position: relative;
             z-index: 10;
+            min-width: 290px;
         }
 
         .contact-info-card:hover {
             border-color: rgba(0, 212, 255, 0.5);
             background: rgba(255, 255, 255, 0.09);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
-        .contact-info-card .contact-detail {
-            flex: 1;
-            min-width: 0;
+        .contact-detail {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            flex-grow: 1;
         }
 
-        .contact-info-card .contact-label {
-            display: block;
-            color: #7f8aa1;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
+        .contact-label {
+            font-size: 11px;
+            color: var(--muted);
             text-transform: uppercase;
-            margin-bottom: 2px;
+            letter-spacing: 0.5px;
         }
 
-        .contact-info-card .contact-value {
+        .contact-value {
             color: #ffffff !important;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 14px;
             text-decoration: none;
-            overflow-wrap: anywhere;
         }
 
         .contact-action {
-            display: inline-flex !important;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            padding: 8px 12px;
-            border-radius: 9px;
-            border: 1px solid rgba(124, 92, 255, 0.35);
-            background: rgba(124, 92, 255, 0.12);
-            color: #ffffff !important;
-            font-size: 11px !important;
-            font-weight: 700 !important;
-            text-decoration: none !important;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--secondary) !important;
+            background: rgba(0, 212, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
             transition: all 0.25s ease;
+            text-decoration: none;
         }
 
         .contact-action:hover {
-            transform: translateY(-2px);
-            border-color: rgba(0, 212, 255, 0.55);
-            background: rgba(0, 212, 255, 0.14);
-            box-shadow: 0 8px 22px rgba(0, 212, 255, 0.12);
+            background: var(--secondary);
+            color: #000000 !important;
         }
 
         .contact-buttons {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
             position: relative;
             z-index: 10;
         }
@@ -986,32 +617,15 @@
             gap: 20px;
         }
 
-        .footer-links {
-            display: flex;
-            gap: 18px;
-        }
+        .footer-links { display: flex; gap: 18px; }
 
-        .footer-links a:hover {
-            color: white;
-        }
-
-        /* =========================================================
-           ANIMATIONS & RESPONSIVE
-        ========================================================= */
         @keyframes floating {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-14px); }
         }
 
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes rotateReverse {
-            from { transform: rotate(360deg); }
-            to { transform: rotate(0deg); }
-        }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes rotateReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
 
         .reveal {
             opacity: 0;
@@ -1019,61 +633,28 @@
             transition: opacity 0.7s ease, transform 0.7s ease;
         }
 
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
         @media (max-width: 950px) {
             .hero { grid-template-columns: 1fr; }
-            .hero-visual { order: -1; }
-            .ai-orb { width: 270px; }
-            .about-grid, .kaggle-layout { grid-template-columns: 1fr; }
-            .projects-grid, .skills-grid, .achievement-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-grid { grid-template-columns: 1fr; }
+            .projects-grid, .skills-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 700px) {
-            section { padding: 80px 0; }
-            .container { width: min(var(--max-width), calc(100% - 28px)); }
             .nav-links, .nav-social { display: none; }
             .mobile-menu { display: block; }
-            .nav-links.open {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
-                top: 76px;
-                left: 0;
-                width: 100%;
-                padding: 25px;
-                background: rgba(5, 7, 13, 0.96);
-                border-bottom: 1px solid var(--border);
-            }
-            .hero { gap: 40px; }
-            .hero h1 { font-size: clamp(45px, 14vw, 68px); letter-spacing: -3px; }
-            .hero-description { font-size: 15px; }
-            .stats { grid-template-columns: 1fr 1fr; }
-            .stat { border-bottom: 1px solid var(--border); }
-            .stat:nth-child(2) { border-right: none; }
-            .stat:nth-child(3), .stat:nth-child(4) { border-bottom: none; }
-            .projects-grid, .skills-grid, .achievement-grid, .kaggle-list { grid-template-columns: 1fr; }
-            .projects-header { display: block; }
-            .footer-inner { flex-direction: column; text-align: center; }
-            .contact-box { padding: 45px 20px; }
+            .projects-grid, .skills-grid { grid-template-columns: 1fr; }
             .contact-info-grid { flex-direction: column; }
-            .contact-info-card { width: 100%; justify-content: flex-start; }
-            .contact-info-card .contact-detail { text-align: left; }
-            .contact-action { margin-left: auto; }
+            .contact-info-card { width: 100%; }
+            .footer-inner { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- =========================================================
-         NAVIGATION
-    ========================================================= -->
+    <!-- NAVIGATION -->
     <nav>
         <div class="container nav-inner">
             <a href="#home" class="logo">SAURABH<span>.</span></a>
@@ -1082,257 +663,119 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#kaggle">Kaggle</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="nav-social">
-                <a href="https://github.com/SAURABHRAJVARMA" target="_blank" aria-label="GitHub">GH</a>
-                <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" aria-label="Kaggle">KG</a>
-                <a href="https://www.linkedin.com/in/saurabh-raj-varma-ba03b5368/" target="_blank" aria-label="LinkedIn">IN</a>
+                <a href="https://github.com/SAURABHRAJVARMA" target="_blank">GH</a>
+                <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">KG</a>
+                <a href="https://www.linkedin.com/in/saurabh-raj-varma-ba03b5368/" target="_blank">IN</a>
             </div>
 
-            <button class="mobile-menu" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+            <button class="mobile-menu" id="mobileMenuBtn">☰</button>
         </div>
     </nav>
 
-    <!-- =========================================================
-         HERO SECTION
-    ========================================================= -->
+    <!-- HERO SECTION -->
     <section id="home">
         <div class="container">
             <div class="hero">
-                <div class="hero-content">
+                <div>
                     <div class="availability">
                         <span class="availability-dot"></span>
                         Available for AI/ML Opportunities
                     </div>
-
-                    <h1>
-                        Building <span class="gradient-text">Intelligent</span> Systems
-                    </h1>
-
-                    <div class="hero-subtitle">
-                        Saurabh Raj Varma — AI/ML Engineer & Data Scientist
-                    </div>
-
-                    <p class="hero-description">
-                        Specializing in deep learning, natural language processing, computer vision, and scalable machine learning workflows. Turning complex datasets into actionable intelligence.
-                    </p>
-
+                    <h1>Building <span class="gradient-text">Intelligent</span> Systems</h1>
+                    <div class="hero-subtitle">Saurabh Raj Varma — AI/ML Engineer</div>
+                    <p class="hero-description">Specializing in deep learning, NLP, computer vision, and scalable ML workflows. Turning complex data into actionable intelligence.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
 
-                <div class="hero-visual">
-                    <div class="ai-orb">
-                        <div class="orb-core"></div>
-                        <div class="orb-dot one"></div>
-                        <div class="orb-dot two"></div>
-                        <div class="orb-dot three"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Bar -->
-            <div class="stats reveal">
-                <div class="stat">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">AI/ML Projects</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">Top 5%</div>
-                    <div class="stat-label">Kaggle Competitions</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">ML Frameworks Mastered</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">99.2%</div>
-                    <div class="stat-label">Avg. Model Precision Focus</div>
+                <div style="display:flex; justify-content:center;">
+                    <div class="ai-orb"><div class="orb-core"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =========================================================
-         ABOUT SECTION
-    ========================================================= -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="reveal">
         <div class="container">
             <div class="section-label">About Me</div>
             <h2 class="section-title">Architecting the future with data & algorithms</h2>
-
             <div class="about-grid">
                 <div class="about-card">
                     <div class="about-avatar">SRV</div>
                     <h3>Saurabh Raj Varma</h3>
                     <p>IIT (ISM) Dhanbad</p>
                 </div>
-
                 <div class="about-content">
-                    <p>
-                        I am an <span class="highlight">AI/ML Engineer and Data Scientist</span> with a passion for designing end-to-end Machine Learning pipelines, Large Language Model (LLM) applications, and production-ready deep learning models.
-                    </p>
-                    <p>
-                        My expertise spans from predictive analytics and computer vision to fine-tuning generative models. I thrive at the intersection of complex mathematics, clean software engineering, and solving real-world domain challenges.
-                    </p>
+                    <p>I am an <strong>AI/ML Engineer and Data Scientist</strong> with a passion for designing end-to-end Machine Learning pipelines, Large Language Model (LLM) applications, and production-ready deep learning models.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =========================================================
-         SKILLS SECTION
-    ========================================================= -->
+    <!-- SKILLS SECTION -->
     <section id="skills" class="reveal">
         <div class="container">
             <div class="section-label">Capabilities</div>
             <h2 class="section-title">Technical Expertise</h2>
-            <p class="section-description">A multi-disciplinary stack engineered for building modern, scalable AI systems.</p>
-
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">🧠</div>
                     <h3>Machine Learning & Deep Learning</h3>
                     <div class="skill-tags">
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Scikit-Learn</span>
-                        <span class="tag">XGBoost</span>
-                        <span class="tag">Neural Networks</span>
+                        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-Learn</span>
                     </div>
                 </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">🤖</div>
                     <h3>Generative AI & LLMs</h3>
                     <div class="skill-tags">
-                        <span class="tag">LangChain</span>
-                        <span class="tag">Transformers</span>
-                        <span class="tag">RAG Systems</span>
-                        <span class="tag">HuggingFace</span>
-                        <span class="tag">Fine-Tuning</span>
+                        <span class="tag">LangChain</span><span class="tag">Transformers</span><span class="tag">RAG</span>
                     </div>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">👁️</div>
-                    <h3>Computer Vision & NLP</h3>
-                    <div class="skill-tags">
-                        <span class="tag">OpenCV</span>
-                        <span class="tag">YOLO</span>
-                        <span class="tag">NLTK</span>
-                        <span class="tag">spaCy</span>
-                        <span class="tag">BERT</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Languages & Core</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Git</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>Data Engineering & Analytics</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Pandas</span>
-                        <span class="tag">NumPy</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">PowerBI</span>
-                        <span class="tag">ETL Pipelines</span>
-                    </div>
-                </div>
-
                 <div class="skill-card">
                     <div class="skill-icon">⚙️</div>
                     <h3>MLOps & Deployment</h3>
                     <div class="skill-tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">AWS / GCP</span>
-                        <span class="tag">MLflow</span>
+                        <span class="tag">Docker</span><span class="tag">FastAPI</span><span class="tag">Git</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =========================================================
-         PROJECTS SECTION
-    ========================================================= -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="reveal">
         <div class="container">
-            <div class="projects-header">
-                <div>
-                    <div class="section-label">Portfolio</div>
-                    <h2 class="section-title">Featured Projects</h2>
-                </div>
-                <div class="filters">
-                    <button class="filter active">All</button>
-                    <button class="filter">Deep Learning</button>
-                    <button class="filter">NLP/LLM</button>
-                    <button class="filter">Vision</button>
-                </div>
-            </div>
-
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project">
                     <div class="project-number">01 / PROJECT</div>
                     <h3>Autonomous Defect Detection</h3>
-                    <p>Computer vision system utilizing fine-tuned YOLOv8 models for real-time defect identification in manufacturing lines with high precision.</p>
+                    <p>Computer vision system utilizing fine-tuned YOLOv8 models for real-time defect identification.</p>
                     <div class="project-tags">
-                        <span class="project-tag">PyTorch</span>
-                        <span class="project-tag">OpenCV</span>
-                        <span class="project-tag">YOLOv8</span>
+                        <span class="project-tag">PyTorch</span><span class="project-tag">YOLOv8</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
                     </div>
                 </div>
-
                 <div class="project">
                     <div class="project-number">02 / PROJECT</div>
                     <h3>RAG Document Query Engine</h3>
-                    <p>Retrieval-Augmented Generation pipeline leveraging vector databases and Llama3 to perform contextual Q&A over massive technical documents.</p>
+                    <p>Retrieval-Augmented Generation pipeline leveraging vector databases for context Q&A.</p>
                     <div class="project-tags">
-                        <span class="project-tag">LangChain</span>
-                        <span class="project-tag">FAISS</span>
-                        <span class="project-tag">FastAPI</span>
+                        <span class="project-tag">LangChain</span><span class="project-tag">FAISS</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-number">03 / PROJECT</div>
-                    <h3>Predictive Financial Analytics</h3>
-                    <p>End-to-end machine learning model designed to forecast market trends and perform risk assessment using gradient-boosted trees and time series modeling.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">XGBoost</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">Scikit-Learn</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SAURABHRAJVARMA" target="_blank" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
                     </div>
                 </div>
             </div>
@@ -1340,99 +783,7 @@
     </section>
 
     <!-- =========================================================
-         KAGGLE SECTION
-    ========================================================= -->
-    <section id="kaggle" class="kaggle-section reveal">
-        <div class="container">
-            <div class="section-label">Competitive Data Science</div>
-            <h2 class="section-title">Kaggle Benchmarks</h2>
-
-            <div class="kaggle-layout">
-                <div class="kaggle-profile">
-                    <div class="kaggle-logo">k</div>
-                    <h3>Kaggle Competitor</h3>
-                    <p>Solving complex benchmark problems, engineering domain features, and tuning deep architectures against global competitive datasets.</p>
-                    <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank" class="btn btn-primary">Visit Profile</a>
-                </div>
-
-                <div class="kaggle-list">
-                    <div class="kaggle-item">
-                        <small>Notebooks</small>
-                        <h4>Exploratory Data Analysis & Modeling</h4>
-                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">View Notebooks →</a>
-                    </div>
-                    <div class="kaggle-item">
-                        <small>Datasets</small>
-                        <h4>Curated ML Benchmarks</h4>
-                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">Explore Datasets →</a>
-                    </div>
-                    <div class="kaggle-item">
-                        <small>Competitions</small>
-                        <h4>Computer Vision Challenge</h4>
-                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">See Ranking →</a>
-                    </div>
-                    <div class="kaggle-item">
-                        <small>Competitions</small>
-                        <h4>Predictive Modeling Contest</h4>
-                        <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">See Solution →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================================================
-         ACHIEVEMENTS SECTION
-    ========================================================= -->
-    <section id="achievements" class="reveal">
-        <div class="container">
-            <div class="section-label">Milestones</div>
-            <h2 class="section-title">Key Achievements</h2>
-
-            <div class="achievement-grid">
-                <div class="achievement">
-                    <div class="achievement-icon">🏆</div>
-                    <h3>Hackathon Winner</h3>
-                    <p>Secured 1st place in a national-level AI hackathon by developing a real-time computer vision deployment for safety compliance.</p>
-                </div>
-
-                <div class="achievement">
-                    <div class="achievement-icon">📜</div>
-                    <h3>AI/ML Certification</h3>
-                    <p>Earned advanced specialization certifications in Deep Learning, TensorFlow, and Production ML Workflows.</p>
-                </div>
-
-                <div class="achievement">
-                    <div class="achievement-icon">🚀</div>
-                    <h3>Open Source Contributor</h3>
-                    <p>Active maintainer and contributor to popular open-source Python Machine Learning repositories and utilities.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================================================
-         EDUCATION SECTION
-    ========================================================= -->
-    <section id="education" class="reveal">
-        <div class="container">
-            <div class="section-label">Background</div>
-            <h2 class="section-title">Education & Academic Journey</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">BACHELOR'S DEGREE</div>
-                    <h3>Computer Science & Engineering</h3>
-                    <h4>IIT (ISM) Dhanbad</h4>
-                    <p>Focused on Data Structures, Algorithms, Machine Learning Theory, Computer Vision, Artificial Intelligence, and Database Systems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================================================
-         CONTACT SECTION (Updated Contact Info & Fixed Buttons)
+         CONTACT SECTION (Updated Contact Info & Cards Layout)
     ========================================================= -->
     <section id="contact" class="reveal">
         <div class="container">
@@ -1479,15 +830,10 @@
         </div>
     </section>
 
-    <!-- =========================================================
-         FOOTER
-    ========================================================= -->
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-inner">
-            <div>
-                © <span id="year"></span> Saurabh Raj Varma. All rights reserved.
-            </div>
-
+            <div>© <span id="year"></span> Saurabh Raj Varma. All rights reserved.</div>
             <div class="footer-links">
                 <a href="https://github.com/SAURABHRAJVARMA" target="_blank">GitHub</a>
                 <a href="https://www.kaggle.com/saurabhrajvarma" target="_blank">Kaggle</a>
@@ -1496,9 +842,7 @@
         </div>
     </footer>
 
-    <!-- =========================================================
-         JAVASCRIPT
-    ========================================================= -->
+    <!-- JAVASCRIPT -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -1507,20 +851,7 @@
 
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('open');
-            mobileMenuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
         });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                mobileMenuBtn.textContent = '☰';
-            });
-        });
-
-        const observerOptions = {
-            root: null,
-            threshold: 0.15
-        };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -1528,7 +859,7 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
